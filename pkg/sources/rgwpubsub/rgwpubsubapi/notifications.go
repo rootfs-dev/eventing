@@ -63,7 +63,7 @@ func (rgw *RGWClient) RGWGetNotifications(bucket string) (*RGWNotifications, err
 		return nil, fmt.Errorf("bucket cannot be empty")
 	}
 
-	req_url := rgw.endpoint + "/notifications/" + bucket
+	req_url := rgw.endpoint + "/notifications/bucket/" + bucket
 	out, err := rgw.rgwDoRequestRaw(method, req_url)
 	if err != nil {
 		if err = json.Unmarshal(out, &topics); err != nil {
