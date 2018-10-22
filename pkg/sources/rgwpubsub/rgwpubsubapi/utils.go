@@ -33,46 +33,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3"
 )
 
-/*
-
-# Topics
-
-- Create topic
-PUT /topics/<name>
-
-- Get topic
-GET /topics/<name>
-
-- List topics
-GET /topics
-
-- Delete a topic
-DELETE /topics/<name>
-
-# Subscriptions
-
-- Subscribe to a topic
-PUT /subscriptions/<name>?topic=<topic>[&push-endpoint=<endpoint>]
-
-- Get subscription
-GET /subscriptions/<name>
-
-- Delete subscription to specific topic
-DELETE /subscriptions/<name>
-
-- Pull (fetch) events from a subscription
-GET /subscription/<name>?events[&max-entries=<max>][&marker=<marker>]
-
-- Ack an event (removes it)
-POST /subscription/<name>?ack&event-id=<id>
-
-# Notifications
-
-GET /notifications/bucket/<bucket>
-PUT /notifications/bucket/<bucket>?topic=<topic>
-DELETE /notifications/bucket<bucket>/?topic=<topic>
-*/
-
 type RGWUser struct {
 	name      string
 	accessKey string
