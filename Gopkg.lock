@@ -24,6 +24,50 @@
   revision = "46cf3e2cf1acef7876068f66cf69ec31aad2d0b2"
 
 [[projects]]
+  digest = "1:5ab33b7abdf50c0f73f8c96506f9131b5a899851ff31bd577c9dcc4e2a79881b"
+  name = "github.com/aws/aws-sdk-go"
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/awsutil",
+    "aws/client",
+    "aws/client/metadata",
+    "aws/corehandlers",
+    "aws/credentials",
+    "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/stscreds",
+    "aws/csm",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/endpoints",
+    "aws/request",
+    "aws/session",
+    "aws/signer/v4",
+    "internal/ini",
+    "internal/s3err",
+    "internal/sdkio",
+    "internal/sdkrand",
+    "internal/sdkuri",
+    "internal/shareddefaults",
+    "private/protocol",
+    "private/protocol/eventstream",
+    "private/protocol/eventstream/eventstreamapi",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/restxml",
+    "private/protocol/xml/xmlutil",
+    "service/s3",
+    "service/s3/s3iface",
+    "service/s3/s3manager",
+    "service/sts",
+  ]
+  pruneopts = "NUT"
+  revision = "c0037b52736b07cea4e0cb6521f7995adef833bc"
+  version = "v1.15.59"
+
+[[projects]]
   branch = "master"
   digest = "1:707ebe952a8b3d00b343c01536c79c73771d100f63ec6babeaed5c79e2b8a8dd"
   name = "github.com/beorn7/perks"
@@ -259,6 +303,13 @@
   version = "v0.3.6"
 
 [[projects]]
+  digest = "1:ac6d01547ec4f7f673311b4663909269bfb8249952de3279799289467837c3cc"
+  name = "github.com/jmespath/go-jmespath"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "0b12d6b5"
+
+[[projects]]
   digest = "1:0243cffa4a3410f161ee613dfdd903a636d07e838a42d341da95d81f42cd1d41"
   name = "github.com/json-iterator/go"
   packages = ["."]
@@ -274,6 +325,78 @@
   ]
   pruneopts = "NUT"
   revision = "5c1d8c8469d1ed34b2aecf4c2305b3a57fff2ee3"
+
+[[projects]]
+  branch = "master"
+  digest = "1:74a5746a6187ed00c575b76843fac4ddc9db8983ef90c00a1ef1c87f02e76d5f"
+  name = "github.com/knative/eventing"
+  packages = [
+    "pkg/apis/channels",
+    "pkg/apis/channels/v1alpha1",
+    "pkg/apis/eventing",
+    "pkg/apis/eventing/v1alpha1",
+    "pkg/apis/feeds",
+    "pkg/apis/feeds/v1alpha1",
+    "pkg/apis/flows",
+    "pkg/apis/flows/v1alpha1",
+    "pkg/buses",
+    "pkg/buses/gcppubsub",
+    "pkg/buses/kafka",
+    "pkg/buses/stub",
+    "pkg/client/clientset/versioned",
+    "pkg/client/clientset/versioned/scheme",
+    "pkg/client/clientset/versioned/typed/channels/v1alpha1",
+    "pkg/client/clientset/versioned/typed/channels/v1alpha1/fake",
+    "pkg/client/clientset/versioned/typed/eventing/v1alpha1",
+    "pkg/client/clientset/versioned/typed/eventing/v1alpha1/fake",
+    "pkg/client/clientset/versioned/typed/feeds/v1alpha1",
+    "pkg/client/clientset/versioned/typed/feeds/v1alpha1/fake",
+    "pkg/client/clientset/versioned/typed/flows/v1alpha1",
+    "pkg/client/clientset/versioned/typed/flows/v1alpha1/fake",
+    "pkg/client/informers/externalversions",
+    "pkg/client/informers/externalversions/channels",
+    "pkg/client/informers/externalversions/channels/v1alpha1",
+    "pkg/client/informers/externalversions/eventing",
+    "pkg/client/informers/externalversions/eventing/v1alpha1",
+    "pkg/client/informers/externalversions/feeds",
+    "pkg/client/informers/externalversions/feeds/v1alpha1",
+    "pkg/client/informers/externalversions/flows",
+    "pkg/client/informers/externalversions/flows/v1alpha1",
+    "pkg/client/informers/externalversions/internalinterfaces",
+    "pkg/client/listers/channels/v1alpha1",
+    "pkg/client/listers/eventing/v1alpha1",
+    "pkg/client/listers/feeds/v1alpha1",
+    "pkg/client/listers/flows/v1alpha1",
+    "pkg/controller",
+    "pkg/controller/bus",
+    "pkg/controller/channel",
+    "pkg/controller/clusterbus",
+    "pkg/controller/eventing/inmemory/channel",
+    "pkg/controller/eventing/inmemory/clusterprovisioner",
+    "pkg/controller/eventing/subscription",
+    "pkg/controller/eventtype",
+    "pkg/controller/feed",
+    "pkg/controller/feed/resources",
+    "pkg/controller/flow",
+    "pkg/controller/flow/resources",
+    "pkg/controller/testing",
+    "pkg/controller/util",
+    "pkg/event",
+    "pkg/logconfig",
+    "pkg/sidecar/configmap",
+    "pkg/sidecar/configmap/filesystem",
+    "pkg/sidecar/configmap/watcher",
+    "pkg/sidecar/fanout",
+    "pkg/sidecar/multichannelfanout",
+    "pkg/sidecar/swappable",
+    "pkg/sources",
+    "pkg/sources/github",
+    "pkg/sources/github/resources",
+    "pkg/system",
+    "test",
+  ]
+  pruneopts = "NUT"
+  revision = "e6b0bd99f7c3807d03342b9bf0cbc789cb424912"
 
 [[projects]]
   digest = "1:aac2721aace98ec22ca32041a292bdb42edec971684e831e3e24c4f5a8d4d893"
@@ -404,6 +527,14 @@
   version = "v2.0.2"
 
 [[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  pruneopts = "NUT"
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:03bca087b180bf24c4f9060775f137775550a0834e18f0bca0520a868679dbd7"
   name = "github.com/prometheus/client_golang"
   packages = [
@@ -461,6 +592,14 @@
   packages = ["."]
   pruneopts = "NUT"
   revision = "583c0c0531f06d5278b7d917446061adc344b5cd"
+
+[[projects]]
+  digest = "1:bacb8b590716ab7c33f2277240972c9582d389593ee8d66fc10074e0508b8126"
+  name = "github.com/stretchr/testify"
+  packages = ["assert"]
+  pruneopts = "NUT"
+  revision = "f35b8ab0b5a2cef36673838d662e249dd9c94686"
+  version = "v1.2.2"
 
 [[projects]]
   digest = "1:773b6907f497ea5abddc9ee90cdde179b119c0c8a04b0f02cb2fff955ed8cab4"
@@ -1058,6 +1197,11 @@
   input-imports = [
     "cloud.google.com/go/pubsub",
     "github.com/Shopify/sarama",
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/credentials",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/aws/aws-sdk-go/service/s3",
+    "github.com/aws/aws-sdk-go/service/s3/s3manager",
     "github.com/bsm/sarama-cluster",
     "github.com/davecgh/go-spew/spew",
     "github.com/fsnotify/fsnotify",
@@ -1066,6 +1210,69 @@
     "github.com/google/go-cmp/cmp/cmpopts",
     "github.com/google/go-github/github",
     "github.com/google/uuid",
+    "github.com/knative/eventing/pkg/apis/channels",
+    "github.com/knative/eventing/pkg/apis/channels/v1alpha1",
+    "github.com/knative/eventing/pkg/apis/eventing",
+    "github.com/knative/eventing/pkg/apis/eventing/v1alpha1",
+    "github.com/knative/eventing/pkg/apis/feeds",
+    "github.com/knative/eventing/pkg/apis/feeds/v1alpha1",
+    "github.com/knative/eventing/pkg/apis/flows",
+    "github.com/knative/eventing/pkg/apis/flows/v1alpha1",
+    "github.com/knative/eventing/pkg/buses",
+    "github.com/knative/eventing/pkg/buses/gcppubsub",
+    "github.com/knative/eventing/pkg/buses/kafka",
+    "github.com/knative/eventing/pkg/buses/stub",
+    "github.com/knative/eventing/pkg/client/clientset/versioned",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/scheme",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/channels/v1alpha1",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/channels/v1alpha1/fake",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/eventing/v1alpha1",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/eventing/v1alpha1/fake",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/feeds/v1alpha1",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/feeds/v1alpha1/fake",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/flows/v1alpha1",
+    "github.com/knative/eventing/pkg/client/clientset/versioned/typed/flows/v1alpha1/fake",
+    "github.com/knative/eventing/pkg/client/informers/externalversions",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/channels",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/channels/v1alpha1",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/eventing",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/eventing/v1alpha1",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/feeds",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/feeds/v1alpha1",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/flows",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/flows/v1alpha1",
+    "github.com/knative/eventing/pkg/client/informers/externalversions/internalinterfaces",
+    "github.com/knative/eventing/pkg/client/listers/channels/v1alpha1",
+    "github.com/knative/eventing/pkg/client/listers/eventing/v1alpha1",
+    "github.com/knative/eventing/pkg/client/listers/feeds/v1alpha1",
+    "github.com/knative/eventing/pkg/client/listers/flows/v1alpha1",
+    "github.com/knative/eventing/pkg/controller",
+    "github.com/knative/eventing/pkg/controller/bus",
+    "github.com/knative/eventing/pkg/controller/channel",
+    "github.com/knative/eventing/pkg/controller/clusterbus",
+    "github.com/knative/eventing/pkg/controller/eventing/inmemory/channel",
+    "github.com/knative/eventing/pkg/controller/eventing/inmemory/clusterprovisioner",
+    "github.com/knative/eventing/pkg/controller/eventing/subscription",
+    "github.com/knative/eventing/pkg/controller/eventtype",
+    "github.com/knative/eventing/pkg/controller/feed",
+    "github.com/knative/eventing/pkg/controller/feed/resources",
+    "github.com/knative/eventing/pkg/controller/flow",
+    "github.com/knative/eventing/pkg/controller/flow/resources",
+    "github.com/knative/eventing/pkg/controller/testing",
+    "github.com/knative/eventing/pkg/controller/util",
+    "github.com/knative/eventing/pkg/event",
+    "github.com/knative/eventing/pkg/logconfig",
+    "github.com/knative/eventing/pkg/sidecar/configmap",
+    "github.com/knative/eventing/pkg/sidecar/configmap/filesystem",
+    "github.com/knative/eventing/pkg/sidecar/configmap/watcher",
+    "github.com/knative/eventing/pkg/sidecar/fanout",
+    "github.com/knative/eventing/pkg/sidecar/multichannelfanout",
+    "github.com/knative/eventing/pkg/sidecar/swappable",
+    "github.com/knative/eventing/pkg/sources",
+    "github.com/knative/eventing/pkg/sources/github",
+    "github.com/knative/eventing/pkg/sources/github/resources",
+    "github.com/knative/eventing/pkg/system",
+    "github.com/knative/eventing/test",
     "github.com/knative/pkg/apis",
     "github.com/knative/pkg/apis/duck",
     "github.com/knative/pkg/apis/duck/v1alpha1",
@@ -1085,6 +1292,7 @@
     "github.com/knative/serving/pkg/client/clientset/versioned/typed/serving/v1alpha1",
     "github.com/knative/test-infra",
     "github.com/prometheus/client_golang/prometheus/promhttp",
+    "github.com/stretchr/testify/assert",
     "go.opencensus.io/trace",
     "go.uber.org/atomic",
     "go.uber.org/zap",
@@ -1128,7 +1336,6 @@
     "k8s.io/client-go/kubernetes",
     "k8s.io/client-go/kubernetes/scheme",
     "k8s.io/client-go/kubernetes/typed/core/v1",
-    "k8s.io/client-go/kubernetes/typed/rbac/v1beta1",
     "k8s.io/client-go/listers/apps/v1",
     "k8s.io/client-go/listers/core/v1",
     "k8s.io/client-go/listers/rbac/v1beta1",
